@@ -25,37 +25,5 @@ Para a realizacao do exercicio 11 adicinal " /event.html "
 
 – As respostas às questões teóricas e dissertativas estão compiladas em PDF
 
-## 📂 Estrutura do Projeto
-public/
-├── dados.json         # Dados de exemplo para useEffect
-└── event.html         # Demonstração de evento em HTML+JS puro
 
-src/
-├── components/        # Componentes e demos de hooks
-│   ├── Counter.jsx
-│   ├── CustomButton.jsx
-│   ├── DataList.jsx
-│   ├── EventExample.jsx
-│   ├── EventThisExample.jsx
-│   ├── FormCadastro.jsx
-│   ├── FormValidation.jsx
-│   ├── Navigation.jsx
-│   ├── Nav.jsx
-│   ├── Tarefas.jsx
-│   ├── TarefasReducer.jsx
-│   ├── UseLayoutEffectExample.jsx
-│   ├── ValueWatcher.jsx
-│   ├── ButtonWithArg.jsx
-│   └── CounterBind.jsx
-├── pages/             # Páginas com React Router
-│   ├── Home.jsx
-│   ├── Sobre.jsx
-│   ├── Contato.jsx
-│   ├── Visitante.jsx
-│   ├── Administrador.jsx
-│   ├── Equipe.jsx
-│   └── Servicos.jsx
-├── App.jsx            # Configuração de rotas e layout global
-├── global.css         # Tema escuro e centralização
-└── main.jsx           # Ponto de entrada (Vite) ou index.js (CRA)
 
