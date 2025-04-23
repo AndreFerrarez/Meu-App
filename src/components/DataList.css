@@ -1,0 +1,40 @@
+.datalist-container {
+    width: 20vw;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+tbody td {
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}
+
+tbody img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.erro {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,117 @@
+:root {
+  --bg-page: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --bg-card: #1e1e1e;
+  --border-color: #444;
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --border-radius: 8px;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+  --space-1: 1rem;
+  --space-2: 2rem;
+  --max-width: 1200px;
+  --min-column: 300px;
+
+  --font-base: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-color);
+  font-family: var(--font-base);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+}
+
+.home,
+.adm,
+.visitor {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  padding: .6em 1.2em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color .25s, background .2s;
+}
+
+button:hover {
+  border-color: var(--primary-color);
+}
+
+button:focus {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.app-content,
+.sec-container,
+.nav-bar {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: var(--space-2) auto;
+  padding: var(--space-1);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  gap: var(--space-1);
+}
+
+.app-content,
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-column), 1fr));
+}
+
+.sec-container>* {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: var(--space-1);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-page: #fff;
+    --text-color: #213547;
+    --bg-card: #f9f9f9;
+    --border-color: #ddd;
+    --primary-hover: #747bff;
+  }
+}

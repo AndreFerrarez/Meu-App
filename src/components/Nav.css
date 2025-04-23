@@ -1,0 +1,26 @@
+.main-nav {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: bold;
+}
+
+.main-nav a.active {
+    color: #21548b;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}

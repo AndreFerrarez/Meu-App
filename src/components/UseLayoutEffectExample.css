@@ -1,0 +1,38 @@
+.layout-effect-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.layout-effect-container input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.layout-effect-container button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.layout-effect-container button.clicked-effect {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+}
+
+.message-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    text-align: center;
+    color: black;
+
+}

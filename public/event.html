@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evento em HTML+JS</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    button { padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer; }
+    .message { color: #2E7D32; font-weight: bold; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h2>Evento em HTML + JavaScript</h2>
+  <button id="btnClick">Clique em mim</button>
+  <p id="msg" class="message"></p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const button = document.getElementById('btnClick');
+      const msg = document.getElementById('msg');
+
+      button.addEventListener('click', function () {
+        msg.textContent = 'Botão clicado!';
+      });
+    });
+  </script>
+</body>
+</html>
